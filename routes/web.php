@@ -74,6 +74,7 @@ Route::prefix('/Estudiantes')->middleware('auth')->group(function(){
     Route::delete('/AgregarEstudiantes/{student}',[EstudianteController::class, 'destroy'])->name('AgregarEstudiantes.destroy');
 
 });
+// es es de materias 
 
 Route::prefix('/Materias')->middleware('auth')->group(function(){
 
